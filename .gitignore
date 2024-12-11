@@ -6,3 +6,5 @@ yarn.lock
 *.log
 test-results.html
 bundle.js
+itacademy-sprint4@1.0.0
+jest

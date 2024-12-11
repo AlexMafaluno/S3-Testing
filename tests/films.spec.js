@@ -13,7 +13,7 @@ const {
 // Exercise 1
 describe('Function "getAllDirectors"', () => {
   it('should be declared', () => {
-    expect(typeof getAllDirectors).toBe('function');
+    expect(typeof getAllDirectors).toBe('function');   //aserción 
   });
 
   it('should return an array', () => {
