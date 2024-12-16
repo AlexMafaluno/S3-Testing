@@ -8,7 +8,7 @@ Este proyecto está orientado a realizar pruebas automatizadas utilizando Jest, 
 - **map**
 - **reduce**
 - **sort**
-- -**filter** 
+- **filter** 
 
 El propósito de este proyecto es validar que estos métodos se comportan correctamente en diversos escenarios a través de un conjunto de pruebas. Al ejecutar las pruebas, se asegura que cada uno de estos métodos funcione como se espera y responda adecuadamente a entradas y condiciones específicas.
 <br>
@@ -20,6 +20,8 @@ Este proyecto utiliza las siguientes tecnologías:
 -**Jest:** Un framework de testing de JavaScript, utilizado para ejecutar las pruebas de los métodos de arrays.
 -**Node.js:** Entorno de ejecución para JavaScript en el servidor, necesario para correr Jest.
 -**npm:** Gestor de paquetes utilizado para instalar dependencias y ejecutar scripts de testing.
+-**HTML:** Estructura semántica del proyecto.
+-**JavaScript:** Manipulación dinámica de datos y funcionalidades con ES6. 
 
 ## Estructura del Proyecto
 
