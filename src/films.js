@@ -53,6 +53,25 @@ function orderByYear(array) {
 }
 
 
+// Exercise 6: Calculate the average of the movies in a category
+function moviesAverageByCategory(movies, genero) {
+  let initialValue = 0;
+let resultFilter = movies.filter(movie => movie.genre.includes(genero));
+
+let sumaScore = resultFilter.reduce((acc,movie) => {
+  const scoreActual = movie.score;
+  return acc + scoreActual;
+
+},initialValue);
+const scorePromedio = sumaScore / resultFilter.length;
+
+console.log(`La puntuación promedio de las peliculas de genero Crime es de ${scorePromedio}`);
+
+return scorePromedio;
+
+}
+
+
 
 // The following is required to make unit tests work.
 /* Environment setup. Do not modify the below code. */
