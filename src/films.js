@@ -72,6 +72,34 @@ return scorePromedio;
 }
 
 
+// Exercise 7: Modify the duration of movies to minutes
+function hoursToMinutes(movies) {
+
+  return movies.map( movie => {
+    let horas = 0;
+    let minutos = 0;
+  
+  const parts = movie.duration.split(" ");
+  
+  
+
+parts.forEach(part => {
+    if(part.includes('h')){
+      horas = parseInt(part.replace("h", ""));
+    }else if (part.includes('min')) {
+      minutos = parseInt(part.replace("min", ""));
+    } 
+  });
+
+ const totalMinutos = (horas * 60) + minutos;
+ 
+  return {...movie, duration: totalMinutos};
+
+});
+}
+
+
+
 
 // The following is required to make unit tests work.
 /* Environment setup. Do not modify the below code. */
