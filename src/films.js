@@ -98,7 +98,22 @@ parts.forEach(part => {
 });
 }
 
+// Exercise 8: Get the best film of a year
+function bestFilmOfYear(movies, any) {
 
+  let resultFilter  = [...movies].filter( movie => movie.year == any);
+  
+  let initialValue = 0;
+  
+  let maxScore = resultFilter.reduce((acc, movie) => { 
+    return movie.score > acc ? movie.score : acc ;},initialValue);
+  
+  let bestMovies = resultFilter.filter(movie => movie.score === maxScore);
+  
+    return bestMovies;
+  }
+  
+  
 
 
 // The following is required to make unit tests work.
