@@ -1,14 +1,25 @@
-# Sprint 3 IT Academy | Video management tool
+# Sprint 3 Testing
 
-## Introduction
+## Introducción
 
-A company in the audiovisual sector has asked us for a web application that will allow their employees to quickly find movies from a large database they have, since the process is currently done manually.
+Este proyecto está orientado a realizar pruebas automatizadas utilizando Jest, un framework de testing popular para JavaScript. En el proyecto se implementan métodos de arrays nativos como:
 
-You will be in charge of setting up the core of the application: all the logic of filtering and sorting of movies. You have 2 weeks to finish, which is how long this sprint lasts.
-
+- **forEach**
+-**map**
+-**reduce**
+**sort**
+El propósito de este proyecto es validar que estos métodos se comportan correctamente en diversos escenarios a través de un conjunto de pruebas. Al ejecutar las pruebas, se asegura que cada uno de estos métodos funcione como se espera y responda adecuadamente a entradas y condiciones específicas.
 <br>
 
-## Requirements
+## Tecnologias utilizadas
+
+Este proyecto utiliza las siguientes tecnologías:
+
+-**Jest:** Un framework de testing de JavaScript, utilizado para ejecutar las pruebas de los métodos de arrays.
+-**Node.js:** Entorno de ejecución para JavaScript en el servidor, necesario para correr Jest.
+-**npm:** Gestor de paquetes utilizado para instalar dependencias y ejecutar scripts de testing.
+
+## Requerimientos
 
 
 1. Clone this repo
@@ -46,12 +57,6 @@ $ git push origin master
 
 <br>
 
-## Introduction
-
-The statement of the exercise is available on the virtual campus.
-
-<br>
-
 ## Tests!
 
 
@@ -60,11 +65,10 @@ $ npm install
 $ npm run test:watch
 ```
 
-And last, open the generated `test-results.html` file with the "Live Server" VSCode extension to see test results.
-
-Apart from the statement, you will know exactly what you are asked to do by looking at the file `tests/films.spec.js`, all tests are already defined here!
-
+Y por último, abre el archivo generado test-results.html con la extensión "Live Server" de VSCode para ver los resultados de las pruebas.
 <br>
+
+
 
 ## Instructions
 
