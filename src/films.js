@@ -33,28 +33,13 @@ function moviesAverageOfDirector(movies, director) {
 
 // Exercise 4:  Alphabetic order by title 
 function orderAlphabetically(array) {
-  
-}
 
-// Exercise 5: Order by year, ascending
-function orderByYear() {
+  let result =[...array].sort((a, b) => a.title.localeCompare(b.title))
+  .map(movie => movie.title)
+  .slice(0, 20);
+  return result;
+} 
 
-}
-
-// Exercise 6: Calculate the average of the movies in a category
-function moviesAverageByCategory() {
-
-}
-
-// Exercise 7: Modify the duration of movies to minutes
-function hoursToMinutes() {
-
-}
-
-// Exercise 8: Get the best film of a year
-function bestFilmOfYear() {
-  
-}
 
 
 

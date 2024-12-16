@@ -294,7 +294,63 @@ describe('Function "orderByYear"', () => {
 // YOUR CODE HERE. Test moviesAverageByCategory()
 describe('Function "moviesAverageByCategory"', () => {
   it('ADD YOUR CODE IN films.spec.js file', () => {
-    expect(typeof hoursToMinutes).toBe('coffee');
+    expect(typeof moviesAverageByCategory).toBe('function');
+  });
+
+  it('should return a number', () => {
+    expect(typeof moviesAverageByCategory(movies, 'Crime')).toBe('number');
+  
+  });
+
+  it('should return a new array, not update the original one', () => {
+    const arr = [];
+    expect(moviesAverageByCategory(arr)).not.toBe(arr);
+  });
+
+  it(' should return the average score of movies selecting only the genre Crime. With 2 decimals! ', () => {
+      const testArr = [
+        {
+        title: 'Paths of Glory',
+        year: 1957,
+        director: 'Stanley Kubrick',
+        duration: '1h 28min',
+        genre: ['Drama', 'War'],
+        score: 8.4
+      },
+      {
+        title: 'Django Unchained',
+        year: 2012,
+        director: 'Quentin Tarantino',
+        duration: '2h 45min',
+        genre: ['Drama', 'Western'],
+        score: 8.4
+      },
+      {
+        title: 'Pulp Fiction',
+        year: 1994,
+        director: 'Quentin Tarantino',
+        duration: '2h 34min',
+        genre: ['Crime', 'Drama'],
+        score: 8.9
+      },
+      {
+        title: 'The Lord of the Rings: The Return of the King',
+        year: 2003,
+        director: 'Peter Jackson',
+        duration: '3h 21min',
+        genre: ['Adventure', 'Drama', 'Fantasy'],
+        score: 8.9
+      },
+      {
+        title: 'Mou gaan dou',
+        year: 2002,
+        director: 'Wai-Keung Lau',
+        duration: '1h 41min',
+        genre: ['Crime', 'Drama', 'Mystery', 'Thriller'],
+        score: 8.1
+      },
+    ];
+    expect(moviesAverageByCategory(testArr, 'Crime')).toBe(8.5);
   });
 });
 
