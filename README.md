@@ -8,6 +8,7 @@ Este proyecto está orientado a realizar pruebas automatizadas utilizando Jest, 
 - **map**
 - **reduce**
 - **sort**
+- -**filter** 
 
 El propósito de este proyecto es validar que estos métodos se comportan correctamente en diversos escenarios a través de un conjunto de pruebas. Al ejecutar las pruebas, se asegura que cada uno de estos métodos funcione como se espera y responda adecuadamente a entradas y condiciones específicas.
 <br>
