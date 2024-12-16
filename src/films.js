@@ -40,6 +40,17 @@ function orderAlphabetically(array) {
   return result;
 } 
 
+// Exercise 5: Order by year, ascending
+function orderByYear(array) {
+
+  let result =[...array].sort((a, b) => { 
+    if(a.year !== b.year){
+      return a.year - b.year;
+    } else{ 
+      return a.title.localeCompare(b.title);
+  }});
+  return result;
+}
 
 
 
