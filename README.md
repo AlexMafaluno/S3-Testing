@@ -5,9 +5,10 @@
 Este proyecto está orientado a realizar pruebas automatizadas utilizando Jest, un framework de testing popular para JavaScript. En el proyecto se implementan métodos de arrays nativos como:
 
 - **forEach**
--**map**
--**reduce**
-**sort**
+- **map**
+- **reduce**
+- **sort**
+
 El propósito de este proyecto es validar que estos métodos se comportan correctamente en diversos escenarios a través de un conjunto de pruebas. Al ejecutar las pruebas, se asegura que cada uno de estos métodos funcione como se espera y responda adecuadamente a entradas y condiciones específicas.
 <br>
 
@@ -41,7 +42,7 @@ La estructura básica del proyecto es la siguiente:
 
 1. Clone this repo
 ```bash
-$ git clone https://github.com/IT-Academy-BCN/starter-code-frontend-sprint-3-movies
+$ git clone https://github.com/AlexMafaluno/S3-Testing.git
 ```
 
 ## Tests!
