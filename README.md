@@ -1,56 +1,52 @@
-# Sprint 3 IT Academy | Video management tool
+# Sprint 3 Testing
 
-## Introduction
+## Introducción
 
-A company in the audiovisual sector has asked us for a web application that will allow their employees to quickly find movies from a large database they have, since the process is currently done manually.
+Este proyecto está orientado a realizar pruebas automatizadas utilizando Jest, un framework de testing popular para JavaScript. En el proyecto se implementan métodos de arrays nativos como:
 
-You will be in charge of setting up the core of the application: all the logic of filtering and sorting of movies. You have 2 weeks to finish, which is how long this sprint lasts.
+- **forEach**
+- **map**
+- **reduce**
+- **sort**
+- **filter** 
 
+El propósito de este proyecto es validar que estos métodos se comportan correctamente en diversos escenarios a través de un conjunto de pruebas. Al ejecutar las pruebas, se asegura que cada uno de estos métodos funcione como se espera y responda adecuadamente a entradas y condiciones específicas.
 <br>
 
-## Requirements
+## Tecnologias utilizadas
+
+Este proyecto utiliza las siguientes tecnologías:
+
+-**Jest:** Un framework de testing de JavaScript, utilizado para ejecutar las pruebas de los métodos de arrays.
+-**Node.js:** Entorno de ejecución para JavaScript en el servidor, necesario para correr Jest.
+-**npm:** Gestor de paquetes utilizado para instalar dependencias y ejecutar scripts de testing.
+-**HTML:** Estructura semántica del proyecto.
+-**JavaScript:** Manipulación dinámica de datos y funcionalidades con ES6. 
+
+## Estructura del Proyecto
+
+La estructura básica del proyecto es la siguiente:
+```bash
+
+/SPRINT 3
+  ├── /src
+  │    ├── data.js       # Base de datos del array Movies que se precisa
+  │    ├── films.js      # Implementaciones de los métodos de array (map, reduce, filter, etc.)
+  │    ├── html.js       # Archivo inutilizado
+  ├── /tests
+  │    ├── films.spec.js    # Archivo de pruebas para los métodos de array
+  ├── package.json          # Configuración de dependencias y scripts
+  ├── test-results.html     # Archivo para mostrar los resultados del test
+  └── README.md             # Este archivo
+```
+
+## Requerimientos
 
 
 1. Clone this repo
 ```bash
-$ git clone https://github.com/IT-Academy-BCN/starter-code-frontend-sprint-3-movies
+$ git clone https://github.com/AlexMafaluno/S3-Testing.git
 ```
-
-2. Unlink your repo from the itacademy repository
-```bash
-$ git remote rm origin
-```
-
-3. Link your repo to the repository you have to create in your github account
-```bash
-$ git remote add origin <your repo name!>
-```
-
-<br>
-
-## Submission
-
-1. Upon completion, run the following commands:
-
-```bash
-$ git add .
-$ git commit -m "Sprint Solution"
-$ git push origin master
-```
-
-2. Create Pull Request.
-
-3. Upload the link to the virtual campus so that your mentor can correct it and give you feedback.
-
-
-
-<br>
-
-## Introduction
-
-The statement of the exercise is available on the virtual campus.
-
-<br>
 
 ## Tests!
 
@@ -60,27 +56,7 @@ $ npm install
 $ npm run test:watch
 ```
 
-And last, open the generated `test-results.html` file with the "Live Server" VSCode extension to see test results.
-
-Apart from the statement, you will know exactly what you are asked to do by looking at the file `tests/films.spec.js`, all tests are already defined here!
-
+Y por último, abre el archivo generado test-results.html con la extensión "Live Server" de VSCode para ver los resultados de las pruebas.
 <br>
-
-## Instructions
-
-You have the following indications from the frontend responsible:
-
-- It is mandatory to implement all loops in ES6 (using map, reduce, filter and sort to manipulate arrays).
-
-- As at the moment we don't consume data from a server using an API, we will work with data from the src/data.js archive. For the moment we will implement the logic using
-an array of information about 250 movies.
-
-- The implementation is about processing this array of movies, to display it as requested in each exercise.
-
-- The logic to implement will be placed in the src/films.js file.
-
-- You don't need to show the result of each function on the screen. Your goal is to pass the tests.  More information on how to program oriented to pass tests at the end of the document.
-
-- Don't forget to include the capture of the test results in the virtual campus.
 
 
