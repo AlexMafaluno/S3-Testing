@@ -302,6 +302,10 @@ describe('Function "moviesAverageByCategory"', () => {
   
   });
 
+  it('should be different from NaN', () => {
+    expect(moviesAverageByCategory(movies, 'Crime')).not.toBeNaN();
+  });
+
   it('should return a new array, not update the original one', () => {
     const arr = [];
     expect(moviesAverageByCategory(arr)).not.toBe(arr);

@@ -26,7 +26,7 @@ function moviesAverageOfDirector(movies, director) {
 },initialValue);
  const scorePromedio = sumaScore / resultFilter.length;
 
- console.log(`La puntuación promedio de los las peliculas es de ${scorePromedio}`);
+ console.log(`La puntuación promedio de los las peliculas es de ${scorePromedio.toFixed(2)}`);
 
  return scorePromedio;
 }
@@ -65,7 +65,7 @@ let sumaScore = resultFilter.reduce((acc,movie) => {
 },initialValue);
 const scorePromedio = sumaScore / resultFilter.length;
 
-console.log(`La puntuación promedio de las peliculas de genero Crime es de ${scorePromedio}`);
+console.log(`La puntuación promedio de las peliculas de genero Crime es de ${scorePromedio.toFixed(2)}`);
 
 return scorePromedio;
 
@@ -81,8 +81,6 @@ function hoursToMinutes(movies) {
   
   const parts = movie.duration.split(" ");
   
-  
-
 parts.forEach(part => {
     if(part.includes('h')){
       horas = parseInt(part.replace("h", ""));
@@ -92,7 +90,6 @@ parts.forEach(part => {
   });
 
  const totalMinutos = (horas * 60) + minutos;
- 
   return {...movie, duration: totalMinutos};
 
 });
